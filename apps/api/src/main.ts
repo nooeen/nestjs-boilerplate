@@ -10,7 +10,7 @@ async function bootstrap() {
   });
 
   const configService = app.get<ConfigService>(ConfigService);
-  const port = configService.get('WEB_PORT') ?? 3001;
+  const port = configService.get('PORT') ?? 3001;
 
   app.useGlobalPipes(
     new ValidationPipe({
@@ -26,6 +26,6 @@ async function bootstrap() {
 
   await app.listen(port);
 
-  console.log(`---------- LIT_GRADING_API_PORT: ${port} ----------`);
+  console.log(`---------- API_PORT: ${port} ----------`);
 }
-bootstrap();
+bootstrap().then(() => {});

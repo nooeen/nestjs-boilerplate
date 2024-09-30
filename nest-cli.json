@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "share": {
+      "type": "library",
+      "root": "libs/share",
+      "entryFile": "index",
+      "sourceRoot": "libs/share/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/share/tsconfig.lib.json"
+      }
+    },
+    "audios": {
+      "type": "library",
+      "root": "libs/audios",
+      "entryFile": "index",
+      "sourceRoot": "libs/audios/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/audios/tsconfig.lib.json"
+      }
+    },
+    "assignments": {
+      "type": "library",
+      "root": "libs/assignments",
+      "entryFile": "index",
+      "sourceRoot": "libs/assignments/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/assignments/tsconfig.lib.json"
+      }
+    },
+    "classes": {
+      "type": "library",
+      "root": "libs/classes",
+      "entryFile": "index",
+      "sourceRoot": "libs/classes/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/classes/tsconfig.lib.json"
+      }
+    },
+    "submissions": {
+      "type": "library",
+      "root": "libs/submissions",
+      "entryFile": "index",
+      "sourceRoot": "libs/submissions/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/submissions/tsconfig.lib.json"
+      }
+    },
+    "prompts": {
+      "type": "library",
+      "root": "libs/prompts",
+      "entryFile": "index",
+      "sourceRoot": "libs/prompts/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/prompts/tsconfig.lib.json"
+      }
+    }
+  }
+}

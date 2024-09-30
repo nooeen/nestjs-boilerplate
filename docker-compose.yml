@@ -1,0 +1,28 @@
+version: '3.8'
+name: liteducation-grading
+services:
+  mongo:
+    container_name: lit-grading-mongo
+    image: 'mongo:7.0.5'
+    ports:
+      - 27018:27017
+    volumes:
+      - my-data:/var/lib/mongodb/data
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=root
+      - MONGO_INITDB_ROOT_PASSWORD=example
+      - MONGO_INITDB_DATABASE=test
+
+  redis:
+    container_name: redis
+    image: bitnami/redis:latest
+    restart: always
+    environment:
+      - REDIS_PASSWORD=example
+    ports:
+      - '6379:6379'
+    volumes:
+      - redis:/bitnami/redis/data
+
+volumes:
+  my-data:

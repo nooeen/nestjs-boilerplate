@@ -1,0 +1,59 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@app/share": [
+        "libs/share/src"
+      ],
+      "@app/share/*": [
+        "libs/share/src/*"
+      ],
+      "@lib/audios": [
+        "libs/audios/src"
+      ],
+      "@lib/audios/*": [
+        "libs/audios/src/*"
+      ],
+      "@lib/assignments": [
+        "libs/assignments/src"
+      ],
+      "@lib/assignments/*": [
+        "libs/assignments/src/*"
+      ],
+      "@lib/classes": [
+        "libs/classes/src"
+      ],
+      "@lib/classes/*": [
+        "libs/classes/src/*"
+      ],
+      "@lib/submissions": [
+        "libs/submissions/src"
+      ],
+      "@lib/submissions/*": [
+        "libs/submissions/src/*"
+      ],
+      "@lib/prompts": [
+        "libs/prompts/src"
+      ],
+      "@lib/prompts/*": [
+        "libs/prompts/src/*"
+      ]
+    }
+  }
+}
